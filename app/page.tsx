@@ -13,7 +13,7 @@ export default function Home() {
           <li><a href="#" className="text-[18px] text-[#444] tracking-[0.08em] uppercase font-normal hover:text-[#1A1A1A] transition-colors">Services</a></li>
           <li><a href="#" className="text-[18px] text-[#444] tracking-[0.08em] uppercase font-normal hover:text-[#1A1A1A] transition-colors">Blog</a></li>
         </ul>
-        <a href="#" className="text-[13px] text-[#1A1A1A] tracking-[0.08em] uppercase font-medium border-b border-[#1A1A1A] pb-px hover:opacity-60 transition-opacity">
+        <a href="#" className="text-[18px] text-[#1A1A1A] tracking-[0.08em] uppercase font-medium border-b border-[#1A1A1A] pb-px hover:opacity-60 transition-opacity">
           Contact →
         </a>
       </nav>
