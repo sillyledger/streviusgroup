@@ -4,28 +4,28 @@ export default function Home() {
 
       {/* Nav */}
       <nav className="flex items-center justify-between px-11 py-7">
-        <div className="text-[13px] font-medium tracking-[0.12em] uppercase text-[#1A1A1A]">
-          STREVIUS <span className="font-light text-[#999]">GROUP</span>
+        <div className="text-[15px] font-medium tracking-[0.12em] uppercase text-[#1A1A1A]">
+          STREVIUS <span className="font-light text-[#888]">GROUP</span>
         </div>
         <ul className="flex gap-9 list-none">
-          <li><a href="#" className="text-[12px] text-[#888] tracking-[0.08em] uppercase font-normal hover:text-[#1A1A1A] transition-colors">Studio</a></li>
-          <li><a href="#" className="text-[12px] text-[#888] tracking-[0.08em] uppercase font-normal hover:text-[#1A1A1A] transition-colors">Work</a></li>
-          <li><a href="#" className="text-[12px] text-[#888] tracking-[0.08em] uppercase font-normal hover:text-[#1A1A1A] transition-colors">Services</a></li>
-          <li><a href="#" className="text-[12px] text-[#888] tracking-[0.08em] uppercase font-normal hover:text-[#1A1A1A] transition-colors">Blog</a></li>
+          <li><a href="#" className="text-[13px] text-[#444] tracking-[0.08em] uppercase font-normal hover:text-[#1A1A1A] transition-colors">Studio</a></li>
+          <li><a href="#" className="text-[13px] text-[#444] tracking-[0.08em] uppercase font-normal hover:text-[#1A1A1A] transition-colors">Work</a></li>
+          <li><a href="#" className="text-[13px] text-[#444] tracking-[0.08em] uppercase font-normal hover:text-[#1A1A1A] transition-colors">Services</a></li>
+          <li><a href="#" className="text-[13px] text-[#444] tracking-[0.08em] uppercase font-normal hover:text-[#1A1A1A] transition-colors">Blog</a></li>
         </ul>
-        <a href="#" className="text-[12px] text-[#1A1A1A] tracking-[0.08em] uppercase font-normal border-b border-[#1A1A1A] pb-px hover:opacity-60 transition-opacity">
+        <a href="#" className="text-[13px] text-[#1A1A1A] tracking-[0.08em] uppercase font-medium border-b border-[#1A1A1A] pb-px hover:opacity-60 transition-opacity">
           Contact →
         </a>
       </nav>
 
       {/* Hero */}
       <div className="flex-1 flex flex-col items-center justify-center text-center px-16 pb-16">
-        <h1 className="font-serif text-[86px] font-normal leading-[1.0] text-[#1A1A1A] tracking-[-0.02em]">
+        <h1 className="font-serif text-[96px] font-normal leading-[1.0] text-[#1A1A1A] tracking-[-0.02em]">
           The studio that<br />
           <em>builds what lasts.</em>
         </h1>
-        <p className="font-sans text-[15px] font-light text-[#666] max-w-[380px] leading-[1.65] mt-6">
-          Digital, media, and real-world assets. Built to compound — starting small, growing with intention.
+        <p className="font-sans text-[17px] font-light text-[#444] max-w-[420px] leading-[1.65] mt-6">
+          Digital, media, and real-world assets. Built to compound. Starting small, growing with intention.
         </p>
         <div className="flex items-center gap-8 mt-10">
           <a href="#" className="text-[12px] font-medium tracking-[0.06em] uppercase bg-[#1A1A1A] text-[#EDEAE3] px-7 py-3 rounded-full hover:opacity-80 transition-opacity">
