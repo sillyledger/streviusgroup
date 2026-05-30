@@ -6,7 +6,7 @@ export default function Home() {
   ]
 
   return (
-    <main className="min-h-screen bg-[#11181C] flex flex-col font-sans">
+    <main className="min-h-screen bg-[#161618] flex flex-col font-sans">
 
       {/* Nav — untouched */}
       <nav className="flex items-center justify-between px-11 py-7">
