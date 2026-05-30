@@ -21,7 +21,7 @@ export default function Home() {
       {/* Hero */}
       <div className="flex-1 flex flex-col items-center justify-center text-center px-16 pb-16">
         <h1 className="font-serif text-[96px] font-normal leading-[1.0] text-[#EDE9E1] tracking-[-0.02em]">
-          The studio that<br />
+          The group that<br />
           <em>builds what lasts.</em>
         </h1>
         <p className="font-sans text-[17px] font-light text-[#777] max-w-[420px] leading-[1.65] mt-6">
@@ -41,7 +41,7 @@ export default function Home() {
       <div className="flex items-center justify-between px-11 py-5 border-t border-white/[0.07]">
         <span className="text-[11px] text-[#444] tracking-[0.06em] uppercase">strevius.com</span>
         <div className="flex gap-2.5">
-          {['One Peak Two', 'Story Brew', 'Study Brew'].map((tag) => (
+          {['One Peak Two', 'Aegos Intel', 'Two Docs'].map((tag) => (
             <span key={tag} className="text-[10px] text-[#444] border border-white/[0.1] px-3 py-1 rounded-full tracking-[0.07em] uppercase">
               {tag}
             </span>
