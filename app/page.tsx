@@ -21,7 +21,7 @@ export default function Home() {
       {/* Hero */}
       <div className="flex-1 flex flex-col items-center justify-center text-center px-16 pb-16">
         <h1 className="font-serif text-[96px] font-normal leading-[1.0] text-[#EDE9E1] tracking-[-0.02em]">
-          The studio that<br />
+          The group that<br />
           <em>builds what lasts.</em>
         </h1>
         <p className="font-sans text-[17px] font-light text-[#777] max-w-[420px] leading-[1.65] mt-6">
