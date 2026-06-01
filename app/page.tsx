@@ -24,7 +24,7 @@ export default function Home() {
           <em>and experiment.</em>
         </h1>
         <p className="font-sans text-[24px] font-light text-[#777] max-w-[780px] leading-[1.65] mt-8 text-center">
-          Digital, media, and real-world assets. Built to compound. Starting small, growing with intention.
+          Companies, products, and bets. Built to compound. Operator-led, capital-disciplined, starting small and growing with intention.
         </p>
         <div className="flex items-center gap-8 mt-10">
           <a href="#" className="text-[12px] font-medium tracking-[0.06em] uppercase bg-[#EDE9E1] text-[#1C1C1A] px-7 py-3 rounded-full hover:opacity-80 transition-opacity">
