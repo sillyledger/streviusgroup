@@ -1,12 +1,5 @@
 import type { Metadata } from 'next'
-import { Geist } from 'next/font/google'
 import './globals.css'
-
-const geist = Geist({
-  subsets: ['latin'],
-  weight: ['400', '900'],
-  variable: '--font-sans',
-})
 
 export const metadata: Metadata = {
   title: 'Ryoka',
@@ -20,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={geist.variable}>
+      <body>
         {children}
       </body>
     </html>
