@@ -10,7 +10,7 @@ export default function Home() {
           /ryo-ka/
         </h1>
         <p style={{ fontSize: '40px', lineHeight: '50px', fontWeight: 300, color: '#d4d4d4', marginBottom: '50px', marginRight: '180px' }}>
-          Ryoka is a hybrid group that builds internet companies, experiments, and makes micro-acquisitions. We operate across studios and capital with one focus: compounding ownership over time.
+          Ryoka builds internet companies, makes micro-acquisitions, and runs experiments across digital assets. We operate across studios and capital with one focus: compounding ownership over time.
         </p>
         <p style={{ fontSize: '40px', lineHeight: '50px', fontWeight: 300, color: '#d4d4d4', marginRight: '180px' }}>
           Operator-led, capital-disciplined, starting small and growing with intention.
