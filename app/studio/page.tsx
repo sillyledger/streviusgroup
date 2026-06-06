@@ -2,19 +2,20 @@ export default function Studio() {
   return (
     <main style={{ minHeight: '100vh', backgroundColor: '#1c1c1e', fontFamily: 'Geist, Helvetica, Arial, sans-serif' }}>
       <nav style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '24px 50px 0' }}>
-        <a href="/" style={{ fontSize: '35px', fontWeight: 900, color: '#f0f0f0', letterSpacing: '-0.03em', textDecoration: 'none' }}>ryoka</a>
-        <a href="mailto:p@ryoka.xyz" style={{ fontSize: '20px', color: '#666', textDecoration: 'none', borderBottom: '2px solid #E8C840', paddingBottom: '2px' }}>p@ryoka.xyz</a>
+        <a href="/" style={{ fontSize: '36px', fontWeight: 900, color: '#f0f0f0', letterSpacing: '-0.03em', textDecoration: 'none' }}>ryoka</a>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '40px' }}>
+          <a href="/studio" style={{ fontSize: '20px', color: '#f0f0f0', textDecoration: 'none', letterSpacing: '0.06em' }}>Studio</a>
+          <a href="/pitch" style={{ fontSize: '20px', color: '#666', textDecoration: 'none', letterSpacing: '0.06em' }}>Pitch</a>
+          <a href="/about" style={{ fontSize: '20px', color: '#666', textDecoration: 'none', letterSpacing: '0.06em' }}>About</a>
+          <a href="mailto:p@ryoka.xyz" style={{ fontSize: '20px', color: '#666', textDecoration: 'none', borderBottom: '2px solid #E8C840', paddingBottom: '2px' }}>p@ryoka.xyz</a>
+        </div>
       </nav>
 
       <div style={{ maxWidth: '980px', margin: '0 auto', padding: '0 50px' }}>
-
-        {/* Split hero */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', padding: '100px 0 80px', alignItems: 'end' }}>
           <div>
             <a href="/" style={{ fontSize: '11px', color: '#555', letterSpacing: '0.1em', textDecoration: 'none', display: 'inline-block', marginBottom: '40px' }}>← Back</a>
-            <h1 style={{ fontSize: '80px', fontWeight: 900, lineHeight: '1.0', letterSpacing: '-0.03em', color: '#f0f0f0', margin: 0 }}>
-              studio
-            </h1>
+            <h1 style={{ fontSize: '80px', fontWeight: 900, lineHeight: '1.0', letterSpacing: '-0.03em', color: '#f0f0f0', margin: 0 }}>studio</h1>
           </div>
           <div style={{ paddingBottom: '6px' }}>
             <p style={{ fontSize: '20px', lineHeight: '30px', fontWeight: 300, color: '#888' }}>
@@ -51,12 +52,10 @@ export default function Studio() {
         <p style={{ fontSize: '17px', lineHeight: '28px', fontWeight: 300, color: '#666', maxWidth: '580px' }}>
           We build lean, validate early, and hold what works. The studio is not an agency and we do not build for clients. Everything we make, we own.
         </p>
-
         <div style={{ borderTop: '0.5px solid #2a2a2a', marginTop: '60px', paddingTop: '60px', paddingBottom: '80px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <p style={{ fontSize: '16px', color: '#555' }}>Have an idea worth building together?</p>
           <a href="mailto:p@ryoka.xyz" style={{ fontSize: '16px', color: '#666', textDecoration: 'none', borderBottom: '2px solid #E8C840', paddingBottom: '2px' }}>p@ryoka.xyz</a>
         </div>
-
       </div>
     </main>
   )
