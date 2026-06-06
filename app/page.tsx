@@ -10,10 +10,10 @@ export default function Home() {
           /ryo-ka/
         </h1>
         <p style={{ fontSize: '40px', lineHeight: '50px', fontWeight: 300, color: '#d4d4d4', marginBottom: '50px', marginRight: '180px' }}>
-          Ryoka is a brand and design consultancy working from offices in London and Mallorca. We deliver creative thinking and world-class design across a wide range of disciplines for clients far and wide, big and small.
+          Ryoka is a hybrid group that builds internet companies, experiments, and makes micro-acquisitions. We operate across studios and capital with one focus: compounding ownership over time.
         </p>
         <p style={{ fontSize: '40px', lineHeight: '50px', fontWeight: 300, color: '#d4d4d4', marginRight: '180px' }}>
-          We believe in the transformative power of ideas to generate business success.
+          Operator-led, capital-disciplined, starting small and growing with intention.
         </p>
         <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '80px', marginRight: '180px' }}>
           <a href="#" style={{ fontSize: '13px', color: '#666', textDecoration: 'none', borderBottom: '1px solid #444', paddingBottom: '2px', letterSpacing: '0.08em' }}>
