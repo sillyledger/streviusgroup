@@ -15,7 +15,7 @@ export default function Home() {
           We build internet companies, make micro-acquisitions, and run experiments across digital assets. Combining studio thinking with investor discipline. Pursuing durable, compounding ownership above all else.
         </p>
         <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '80px' }}>
-          <a href="#" style={{ fontSize: '20px', color: '#666', textDecoration: 'none', borderBottom: '2px solid #E8C840', paddingBottom: '2px', letterSpacing: '0.08em' }}>
+          <a href="/about" style={{ fontSize: '20px', color: '#666', textDecoration: 'none', borderBottom: '2px solid #E8C840', paddingBottom: '2px', letterSpacing: '0.08em' }}>
             About
           </a>
         </div>
