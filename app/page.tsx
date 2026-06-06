@@ -13,7 +13,7 @@ export default function Home() {
           Ryoka builds internet companies, makes micro-acquisitions, and runs experiments across digital assets. We combine studio thinking with investor discipline. We pursue durable, compounding ownership above all else.
         </p>
         <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '80px' }}>
-          <a href="#" style={{ fontSize: '18px', color: '#666', textDecoration: 'none', borderBottom: '1px solid #444', paddingBottom: '2px', letterSpacing: '0.08em' }}>
+          <a href="#" style={{ fontSize: '13px', color: '#666', textDecoration: 'none', borderBottom: '1px solid #444', paddingBottom: '2px', letterSpacing: '0.08em' }}>
             About
           </a>
         </div>
