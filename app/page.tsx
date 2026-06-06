@@ -21,12 +21,32 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Second section */}
+      {/* Our Approach */}
       <div style={{ maxWidth: '980px', margin: '0 auto', padding: '120px 50px 120px' }}>
         <p style={{ fontSize: '13px', color: '#555', letterSpacing: '0.08em', marginBottom: '24px' }}>Our Approach</p>
         <p style={{ fontSize: '25px', lineHeight: '35px', fontWeight: 300, color: '#d4d4d4' }}>
           Most firms optimize for exits. We optimize for ownership. The longer we hold, the more we learn, and the better our next move becomes. We currently operate across a small number of owned properties. Software tools, content assets, and early-stage bets. Each is chosen for its potential to grow quietly and hold value over time.
         </p>
+      </div>
+
+      {/* Portfolio */}
+      <div style={{ maxWidth: '980px', margin: '0 auto', padding: '0 50px 120px' }}>
+        <p style={{ fontSize: '13px', color: '#555', letterSpacing: '0.08em', marginBottom: '40px' }}>Portfolio</p>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1px', background: '#2a2a2a' }}>
+          {[
+            { num: '01', name: 'Two Docs', desc: 'A writing and document tool built for focused work. Clean, minimal, distraction-free.', type: 'Software — owned' },
+            { num: '02', name: 'Aegos Intel', desc: 'Company intelligence and data platform for professionals who need clarity, fast.', type: 'SaaS — owned' },
+            { num: '03', name: 'Story Brew', desc: 'Narrative content brand. Built for audiences that want depth over noise.', type: 'Media — owned' },
+            { num: '04', name: 'One Peak Two', desc: 'Studio and experiments branch. Where we build, test, and launch new digital assets.', type: 'Studio — owned' },
+          ].map((item) => (
+            <div key={item.num} style={{ backgroundColor: '#1c1c1e', padding: '40px', display: 'grid', gridTemplateRows: '20px 48px 1fr 24px', gap: '16px' }}>
+              <p style={{ fontSize: '11px', color: '#444', letterSpacing: '0.12em', margin: 0 }}>{item.num}</p>
+              <p style={{ fontSize: '28px', fontWeight: 900, color: '#f0f0f0', letterSpacing: '-0.03em', lineHeight: 1, margin: 0, alignSelf: 'center' }}>{item.name}</p>
+              <p style={{ fontSize: '13px', color: '#555', lineHeight: '1.6', margin: 0 }}>{item.desc}</p>
+              <p style={{ fontSize: '11px', color: '#444', letterSpacing: '0.08em', margin: 0, alignSelf: 'end' }}>{item.type}</p>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Investment Thesis */}
@@ -39,7 +59,6 @@ export default function Home() {
           Read Thesis
         </a>
 
-        {/* Criteria rows */}
         {[
           { num: '01', title: 'Cash flow or a clear path to it', body: 'We only acquire what generates or can credibly generate returns. No speculative plays without a route to profitability.' },
           { num: '02', title: 'A defensible niche', body: 'The best assets serve a specific audience extremely well. We look for positions that are hard to replicate and easy to hold.' },
