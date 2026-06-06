@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <main style={{ minHeight: '100vh', backgroundColor: '#1c1c1e', fontFamily: 'Geist, Helvetica, Arial, sans-serif' }}>
       <nav style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '24px 50px 0' }}>
-        <span style={{ fontSize: '40px', fontWeight: 900, color: '#f0f0f0', letterSpacing: '-0.03em' }}>ryoka</span>
+        <span style={{ fontSize: '40px', fontWeight: 900, color: '#f0f0f0', letterSpacing: '-0.03em' }}>r.</span>
         <a href="#" style={{ fontSize: '20px', color: '#666', textDecoration: 'none' }}>Contact</a>
       </nav>
 
