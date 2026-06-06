@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <main style={{ minHeight: '100vh', backgroundColor: '#1c1c1e', fontFamily: 'Geist, Helvetica, Arial, sans-serif' }}>
       <nav style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '24px 50px 0' }}>
-        <img src="/Ryoka Logo 01.png" alt="Ryoka" style={{ height: '28px' }} />
+        <img src="/Ryoka Logo 01.png" alt="Ryoka" style={{ height: '140px' }} />
         <a href="#" style={{ fontSize: '13px', color: '#666', textDecoration: 'none' }}>Contact</a>
       </nav>
       <div style={{ maxWidth: '980px', margin: '0 auto', padding: '118px 50px 0' }}>
