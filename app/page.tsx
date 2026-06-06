@@ -12,9 +12,6 @@ export default function Home() {
         <p style={{ fontSize: '40px', lineHeight: '50px', fontWeight: 300, color: '#d4d4d4', marginBottom: '50px' }}>
           Ryoka builds internet companies, makes micro-acquisitions, and runs experiments across digital assets. We combine studio thinking with investor discipline. We pursue durable, compounding ownership above all else.
         </p>
-        <p style={{ fontSize: '40px', lineHeight: '50px', fontWeight: 300, color: '#d4d4d4', maxWidth: '900px' }}>
-          Operator-led, capital-disciplined, starting small and growing with intention.
-        </p>
         <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '80px' }}>
           <a href="#" style={{ fontSize: '18px', color: '#666', textDecoration: 'none', borderBottom: '1px solid #444', paddingBottom: '2px', letterSpacing: '0.08em' }}>
             About
