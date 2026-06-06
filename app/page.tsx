@@ -28,6 +28,35 @@ export default function Home() {
           Most firms optimize for exits. We optimize for ownership. The longer we hold, the more we learn, and the better our next move becomes. We currently operate across a small number of owned properties. Software tools, content assets, and early-stage bets. Each is chosen for its potential to grow quietly and hold value over time.
         </p>
       </div>
+
+      {/* Investment Thesis */}
+      <div style={{ maxWidth: '980px', margin: '0 auto', padding: '0 50px 120px' }}>
+        <p style={{ fontSize: '13px', color: '#555', letterSpacing: '0.08em', marginBottom: '40px' }}>Investment Thesis</p>
+        <p style={{ fontSize: '25px', lineHeight: '35px', fontWeight: 300, color: '#d4d4d4', marginBottom: '32px', maxWidth: '680px' }}>
+          We look for undervalued digital properties, niche media brands, and small real-world businesses with durable fundamentals. We are not chasing growth. We are building a base of assets that quietly and consistently generate value.
+        </p>
+        <a href="#" style={{ fontSize: '13px', color: '#666', textDecoration: 'none', borderBottom: '1px solid #444', paddingBottom: '2px', letterSpacing: '0.08em', display: 'inline-block', marginBottom: '70px' }}>
+          Read Thesis
+        </a>
+
+        {/* Criteria rows */}
+        {[
+          { num: '01', title: 'Cash flow or a clear path to it', body: 'We only acquire what generates or can credibly generate returns. No speculative plays without a route to profitability.' },
+          { num: '02', title: 'A defensible niche', body: 'The best assets serve a specific audience extremely well. We look for positions that are hard to replicate and easy to hold.' },
+          { num: '03', title: 'A long holding horizon', body: 'We are not in the business of flipping. Every acquisition is made with the intention of holding for years, not months. Patience is the edge.' },
+        ].map((item, i, arr) => (
+          <div key={item.num} style={{ display: 'flex', alignItems: 'flex-start', borderTop: '0.5px solid #2a2a2a', borderBottom: i === arr.length - 1 ? '0.5px solid #2a2a2a' : 'none' }}>
+            <span style={{ fontSize: '11px', color: '#444', letterSpacing: '0.12em', padding: '32px 0', width: '60px', flexShrink: 0 }}>{item.num}</span>
+            <span style={{ fontSize: '22px', fontWeight: 500, color: '#f0f0f0', padding: '32px 40px 32px 0', width: '280px', flexShrink: 0, lineHeight: '1.2' }}>{item.title}</span>
+            <span style={{ fontSize: '15px', color: '#666', lineHeight: '1.7', padding: '34px 0', flex: 1 }}>{item.body}</span>
+          </div>
+        ))}
+
+        <div style={{ marginTop: '70px', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end' }}>
+          <p style={{ fontSize: '40px', lineHeight: '48px', fontWeight: 900, color: '#f0f0f0', letterSpacing: '-0.03em', margin: 0 }}>We hold.<br />We do not flip.</p>
+          <p style={{ fontSize: '13px', color: '#444', letterSpacing: '0.08em', margin: 0 }}>Ryoka — est. 2025</p>
+        </div>
+      </div>
     </main>
   )
 }
