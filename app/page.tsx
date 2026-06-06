@@ -1,9 +1,9 @@
 export default function Home() {
   return (
     <main style={{ minHeight: '100vh', backgroundColor: '#1c1c1e', fontFamily: 'Geist, Helvetica, Arial, sans-serif' }}>
-      <nav style={{ display: 'flex', justifyContent: 'space-between', padding: '24px 50px 0', fontSize: '13px', color: '#666' }}>
-        <span>Welcome</span>
-        <a href="#" style={{ color: '#666', textDecoration: 'none' }}>Contact</a>
+      <nav style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '24px 50px 0' }}>
+        <img src="/Ryoka Logo 01.png" alt="Ryoka" style={{ height: '28px' }} />
+        <a href="#" style={{ fontSize: '13px', color: '#666', textDecoration: 'none' }}>Contact</a>
       </nav>
       <div style={{ maxWidth: '980px', margin: '0 auto', padding: '118px 50px 0' }}>
         <h1 style={{ fontSize: '80px', fontWeight: 900, lineHeight: '1.0', letterSpacing: '-0.03em', color: '#f0f0f0', marginBottom: '50px' }}>
