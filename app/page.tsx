@@ -59,7 +59,7 @@ export default function Home() {
           We're a permanent capital company that builds, acquires, and invests in exceptional assets across private and public markets. We pursue durable ownership, patient capital, and long-term value creation.
         </p>
         <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '80px' }}>
-          <a href="/about" style={{ fontSize: '20px', color: '#666', textDecoration: 'none', borderBottom: '2px solid #E8C840', paddingBottom: '2px', letterSpacing: '0.08em' }}>
+          <a href="/about" style={{ fontSize: '20px', color: '#666', textDecoration: 'none', borderBottom: '1px solid #E8C840', paddingBottom: '2px', letterSpacing: '0.08em' }}>
             About
           </a>
         </div>
@@ -161,7 +161,7 @@ export default function Home() {
           ))}
         </div>
         <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '48px' }}>
-          <a href="https://www.ryoka.xyz/holdings" style={{ fontSize: '20px', color: '#666', textDecoration: 'none', borderBottom: '2px solid #E8C840', paddingBottom: '2px', letterSpacing: '0.08em' }}>
+          <a href="https://www.ryoka.xyz/holdings" style={{ fontSize: '20px', color: '#666', textDecoration: 'none', borderBottom: '1px solid #E8C840', paddingBottom: '2px', letterSpacing: '0.08em' }}>
             View all holdings
           </a>
         </div>
