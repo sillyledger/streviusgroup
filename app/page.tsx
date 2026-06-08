@@ -83,7 +83,7 @@ export default function Home() {
 
       {/* Portfolio */}
       <div style={{ maxWidth: '980px', margin: '0 auto', padding: '80px 50px 120px' }}>
-        <p style={{ fontSize: '13px', color: '#555', letterSpacing: '0.08em', marginBottom: '40px' }}>Portfolio</p>
+        <p style={{ fontSize: '13px', color: '#555', letterSpacing: '0.08em', marginBottom: '40px' }}>Portfolio &amp; Holdings</p>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '12px' }}>
           {holdings.map((h) => (
             <a
@@ -159,6 +159,11 @@ export default function Home() {
               </div>
             </a>
           ))}
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '48px' }}>
+          <a href="https://www.ryoka.xyz/holdings" style={{ fontSize: '20px', color: '#666', textDecoration: 'none', borderBottom: '2px solid #E8C840', paddingBottom: '2px', letterSpacing: '0.08em' }}>
+            View all holdings
+          </a>
         </div>
       </div>
 
