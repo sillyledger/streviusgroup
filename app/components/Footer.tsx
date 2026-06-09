@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 
 export default function Footer() {
@@ -91,7 +93,6 @@ export default function Footer() {
   )
 }
 
-// Separate component so hover state works without 'use client' on the footer
 function FooterLink({ href, label, style }: { href: string; label: string; style: React.CSSProperties }) {
   return (
     <a
