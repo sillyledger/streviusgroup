@@ -39,7 +39,7 @@ export default function Home() {
       <Navbar />
 
       {/* Hero */}
-      <div style={{ maxWidth: '980px', margin: '0 auto', padding: '200px 50px 0' }}>
+      <div style={{ maxWidth: '980px', margin: '0 auto', padding: '250px 50px 0' }}>
         <p style={{ fontSize: '35px', lineHeight: '50px', fontWeight: 300, color: '#d4d4d4', marginBottom: '50px' }}>
           We&apos;re a permanent{' '}
           <a href="https://www.ryoka.xyz/capital" style={{ color: 'inherit', textDecoration: 'none', borderBottom: '1px solid #444', paddingBottom: '1px' }}>capital</a>
@@ -52,11 +52,6 @@ export default function Home() {
             About
           </a>
         </div>
-      </div>
-
-      {/* Divider */}
-      <div style={{ maxWidth: '980px', margin: '0 auto', padding: '120px 50px 0' }}>
-        <div style={{ borderTop: '0.5px solid #1a2a3a' }} />
       </div>
 
       {/* Portfolio */}
