@@ -27,7 +27,7 @@ export default function Home() {
     {
       name: 'One Peak Two',
       domain: 'onepeaktwo.com',
-      description: 'Studio and experiments arm. Building internet projects as an experiment — hit and miss principle.',
+      description: 'Studio and experiments arm. Building internet projects as an experiment - hit and miss principle.',
       tags: ['Studio'],
       initial: 'O',
       iconBg: '#2a2a2c',
@@ -37,7 +37,7 @@ export default function Home() {
     {
       name: 'Story Brew',
       domain: 'storybrew.online',
-      description: 'Bedtime stories for English learners (B1–B2), with a real narrator. A platform for language learning through immersive storytelling.',
+      description: 'Bedtime stories for English learners (B1-B2), with a real narrator. A platform for language learning through immersive storytelling.',
       tags: ['Education', 'English Learning'],
       initial: 'S',
       iconBg: '#1a3a5c',
@@ -172,12 +172,12 @@ export default function Home() {
           Let&apos;s talk<span style={{ color: '#E8C840' }}>.</span>
         </h2>
         <p style={{ fontSize: '18px', color: '#666', fontWeight: 300, lineHeight: '1.5', maxWidth: '520px', marginBottom: '60px' }}>
-          Whether you&apos;re looking to partner, sell a business, or just follow what we&apos;re building — the door is open.
+          Whether you&apos;re looking to partner, sell a business, or just follow what we&apos;re building - the door is open.
         </p>
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
 
-          {/* Primary email — full width */}
+          {/* Primary email - full width */}
           <div style={{
             gridColumn: 'span 2',
             background: '#242426',
