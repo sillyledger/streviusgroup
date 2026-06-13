@@ -3,37 +3,6 @@
 import Navbar from '../components/Navbar'
 
 export default function Holdings() {
-  const holdings = [
-    {
-      name: 'TWO Docs',
-      domain: 'two.so',
-      description: 'The doc app built for iPad and Mac. Beautiful, focused writing for creatives, solo operators, and small teams.',
-      tags: ['SaaS', 'B2B & B2C', 'In Beta'],
-      href: 'https://www.two.so',
-    },
-    {
-      name: 'Aegos Intel',
-      domain: 'aegosintel.com',
-      description: 'Company intelligence and data platform. Structured business insights for operators and analysts.',
-      tags: ['SaaS', 'B2B', 'In Progress'],
-      href: 'https://aegosintel.com',
-    },
-    {
-      name: 'Sorano',
-      domain: 'sorano.space',
-      description: 'Roadmap, changelog, and community votes for your product. Share what you are building, let users vote on what is next, publish a changelog when you ship.',
-      tags: ['SaaS', 'B2B', 'Startups', 'Live'],
-      href: 'https://sorano.space',
-    },
-    {
-      name: 'Tenkaro',
-      domain: 'tenkaro.com',
-      description: 'Domain monitoring tool. Track availability, expiry, and changes across the domains that matter to your business.',
-      tags: ['SaaS', 'B2B', 'B2C', 'In Progress'],
-      href: 'https://tenkaro.com',
-    },
-  ]
-
   return (
     <main style={{ minHeight: '100vh', backgroundColor: '#0D1821', fontFamily: 'Geist, Helvetica, Arial, sans-serif' }}>
       <Navbar />
@@ -54,59 +23,164 @@ export default function Holdings() {
         <div style={{ borderTop: '0.5px solid #1a2a3a' }} />
       </div>
 
-      {/* Holdings Grid */}
-      <div style={{ maxWidth: '980px', margin: '0 auto', padding: '80px 50px 60px' }}>
+      {/* Bento Grid */}
+      <div style={{ maxWidth: '980px', margin: '0 auto', padding: '80px 50px 0' }}>
         <p style={{ fontSize: '13px', color: '#446', letterSpacing: '0.08em', marginBottom: '40px' }}>Current Holdings</p>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '12px' }}>
-          {holdings.map((h) => (
-            <a
-              key={h.name}
-              href={h.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: 'block',
-                background: '#112233',
-                borderRadius: '10px',
-                padding: '28px',
-                border: '0.5px solid #1a3050',
-                textDecoration: 'none',
-                cursor: 'pointer',
-                transition: 'border-color 0.15s ease',
-              }}
-              onMouseEnter={e => (e.currentTarget.style.borderColor = '#2a4a6a')}
-              onMouseLeave={e => (e.currentTarget.style.borderColor = '#1a3050')}
-            >
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
-                <span style={{ fontSize: '19px', fontWeight: 700, color: '#f0f0f0', fontFamily: 'Geist, Helvetica, Arial, sans-serif' }}>
-                  {h.name}
-                </span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
-                  <path d="M2 12L12 2M12 2H5M12 2V9" stroke="#555" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
-              <p style={{ fontSize: '13px', color: '#446', marginBottom: '14px' }}>{h.domain}</p>
-              <p style={{ fontSize: '16px', color: '#aaa', lineHeight: '1.55', fontWeight: 300 }}>{h.description}</p>
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginTop: '20px' }}>
-                {h.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    style={{
-                      fontSize: '11px',
-                      color: '#556',
-                      border: '0.5px solid #1a3050',
-                      borderRadius: '4px',
-                      padding: '3px 9px',
-                      letterSpacing: '0.05em',
-                    }}
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </a>
-          ))}
+
+        {/* Row 1: Sorano 2/3 + Aegos 1/3 */}
+        <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '12px', marginBottom: '12px' }}>
+          <a
+            href="https://sorano.space"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ display: 'block', background: '#112233', borderRadius: '10px', padding: '36px', border: '0.5px solid #1a3050', textDecoration: 'none', transition: 'border-color 0.15s ease' }}
+            onMouseEnter={e => (e.currentTarget.style.borderColor = '#2a4a6a')}
+            onMouseLeave={e => (e.currentTarget.style.borderColor = '#1a3050')}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
+              <span style={{ fontSize: '21px', fontWeight: 700, color: '#f0f0f0' }}>Sorano</span>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H5M12 2V9" stroke="#555" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            </div>
+            <p style={{ fontSize: '13px', color: '#446', marginBottom: '16px' }}>sorano.space</p>
+            <p style={{ fontSize: '17px', color: '#aaa', lineHeight: '1.6', fontWeight: 300, marginBottom: '24px' }}>
+              Roadmap, changelog, and community votes for your product. Share what you are building, let users vote on what is next, publish a changelog when you ship.
+            </p>
+            <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
+              {['SaaS', 'B2B', 'Startups', 'Live'].map(t => (
+                <span key={t} style={{ fontSize: '11px', color: '#556', border: '0.5px solid #1a3050', borderRadius: '4px', padding: '3px 9px', letterSpacing: '0.05em' }}>{t}</span>
+              ))}
+            </div>
+          </a>
+
+          <a
+            href="https://aegosintel.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ display: 'block', background: '#112233', borderRadius: '10px', padding: '28px', border: '0.5px solid #1a3050', textDecoration: 'none', transition: 'border-color 0.15s ease' }}
+            onMouseEnter={e => (e.currentTarget.style.borderColor = '#2a4a6a')}
+            onMouseLeave={e => (e.currentTarget.style.borderColor = '#1a3050')}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
+              <span style={{ fontSize: '19px', fontWeight: 700, color: '#f0f0f0' }}>Aegos Intel</span>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H5M12 2V9" stroke="#555" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            </div>
+            <p style={{ fontSize: '13px', color: '#446', marginBottom: '14px' }}>aegosintel.com</p>
+            <p style={{ fontSize: '15px', color: '#aaa', lineHeight: '1.55', fontWeight: 300, marginBottom: '20px' }}>Company intelligence and data platform. Structured business insights for operators and analysts.</p>
+            <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
+              {['SaaS', 'B2B', 'In Progress'].map(t => (
+                <span key={t} style={{ fontSize: '11px', color: '#556', border: '0.5px solid #1a3050', borderRadius: '4px', padding: '3px 9px', letterSpacing: '0.05em' }}>{t}</span>
+              ))}
+            </div>
+          </a>
         </div>
+
+        {/* Row 2: TWO 1/3 + Tenkaro 1/3 + One Peak Two 1/3 */}
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '12px', marginBottom: '12px' }}>
+          <a
+            href="https://www.two.so"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ display: 'block', background: '#112233', borderRadius: '10px', padding: '28px', border: '0.5px solid #1a3050', textDecoration: 'none', transition: 'border-color 0.15s ease' }}
+            onMouseEnter={e => (e.currentTarget.style.borderColor = '#2a4a6a')}
+            onMouseLeave={e => (e.currentTarget.style.borderColor = '#1a3050')}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
+              <span style={{ fontSize: '19px', fontWeight: 700, color: '#f0f0f0' }}>TWO Docs</span>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H5M12 2V9" stroke="#555" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            </div>
+            <p style={{ fontSize: '13px', color: '#446', marginBottom: '14px' }}>two.so</p>
+            <p style={{ fontSize: '15px', color: '#aaa', lineHeight: '1.55', fontWeight: 300, marginBottom: '20px' }}>The doc app built for iPad and Mac. Beautiful, focused writing for creatives and solo operators.</p>
+            <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
+              {['SaaS', 'B2B & B2C', 'In Beta'].map(t => (
+                <span key={t} style={{ fontSize: '11px', color: '#556', border: '0.5px solid #1a3050', borderRadius: '4px', padding: '3px 9px', letterSpacing: '0.05em' }}>{t}</span>
+              ))}
+            </div>
+          </a>
+
+          <a
+            href="https://tenkaro.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ display: 'block', background: '#112233', borderRadius: '10px', padding: '28px', border: '0.5px solid #1a3050', textDecoration: 'none', transition: 'border-color 0.15s ease' }}
+            onMouseEnter={e => (e.currentTarget.style.borderColor = '#2a4a6a')}
+            onMouseLeave={e => (e.currentTarget.style.borderColor = '#1a3050')}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
+              <span style={{ fontSize: '19px', fontWeight: 700, color: '#f0f0f0' }}>Tenkaro</span>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H5M12 2V9" stroke="#555" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            </div>
+            <p style={{ fontSize: '13px', color: '#446', marginBottom: '14px' }}>tenkaro.com</p>
+            <p style={{ fontSize: '15px', color: '#aaa', lineHeight: '1.55', fontWeight: 300, marginBottom: '20px' }}>Domain monitoring tool. Track availability, expiry, and changes across the domains that matter.</p>
+            <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
+              {['SaaS', 'B2B', 'B2C', 'In Progress'].map(t => (
+                <span key={t} style={{ fontSize: '11px', color: '#556', border: '0.5px solid #1a3050', borderRadius: '4px', padding: '3px 9px', letterSpacing: '0.05em' }}>{t}</span>
+              ))}
+            </div>
+          </a>
+
+          <a
+            href="https://onepeaktwo.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ display: 'block', background: '#112233', borderRadius: '10px', padding: '28px', border: '0.5px solid #1a3050', textDecoration: 'none', transition: 'border-color 0.15s ease' }}
+            onMouseEnter={e => (e.currentTarget.style.borderColor = '#2a4a6a')}
+            onMouseLeave={e => (e.currentTarget.style.borderColor = '#1a3050')}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
+              <span style={{ fontSize: '19px', fontWeight: 700, color: '#f0f0f0' }}>One Peak Two</span>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H5M12 2V9" stroke="#555" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            </div>
+            <p style={{ fontSize: '13px', color: '#446', marginBottom: '14px' }}>onepeaktwo.com</p>
+            <p style={{ fontSize: '15px', color: '#aaa', lineHeight: '1.55', fontWeight: 300, marginBottom: '20px' }}>Studio and experiments arm. Building internet projects as an experiment - hit and miss principle.</p>
+            <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
+              {['Studio'].map(t => (
+                <span key={t} style={{ fontSize: '11px', color: '#556', border: '0.5px solid #1a3050', borderRadius: '4px', padding: '3px 9px', letterSpacing: '0.05em' }}>{t}</span>
+              ))}
+            </div>
+          </a>
+        </div>
+
+        {/* Row 3: Story Brew full width */}
+        <a
+          href="https://storybrew.online"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ display: 'block', background: '#112233', borderRadius: '10px', padding: '36px', border: '0.5px solid #1a3050', textDecoration: 'none', transition: 'border-color 0.15s ease' }}
+          onMouseEnter={e => (e.currentTarget.style.borderColor = '#2a4a6a')}
+          onMouseLeave={e => (e.currentTarget.style.borderColor = '#1a3050')}
+        >
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+            <div style={{ maxWidth: '560px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
+                <span style={{ fontSize: '21px', fontWeight: 700, color: '#f0f0f0' }}>Story Brew</span>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H5M12 2V9" stroke="#555" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              </div>
+              <p style={{ fontSize: '13px', color: '#446', marginBottom: '14px' }}>storybrew.online</p>
+              <p style={{ fontSize: '17px', color: '#aaa', lineHeight: '1.6', fontWeight: 300 }}>Bedtime stories for English learners (B1-B2), with a real narrator. A platform for language learning through immersive storytelling.</p>
+            </div>
+            <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', justifyContent: 'flex-end', alignSelf: 'flex-end' }}>
+              {['Education', 'English Learning'].map(t => (
+                <span key={t} style={{ fontSize: '11px', color: '#556', border: '0.5px solid #1a3050', borderRadius: '4px', padding: '3px 9px', letterSpacing: '0.05em' }}>{t}</span>
+              ))}
+            </div>
+          </div>
+        </a>
+      </div>
+
+      {/* Divider */}
+      <div style={{ maxWidth: '980px', margin: '0 auto', padding: '80px 50px 0' }}>
+        <div style={{ borderTop: '0.5px solid #1a2a3a' }} />
+      </div>
+
+      {/* Our Approach */}
+      <div style={{ maxWidth: '980px', margin: '0 auto', padding: '80px 50px 80px' }}>
+        <p style={{ fontSize: '13px', color: '#446', letterSpacing: '0.08em', marginBottom: '24px' }}>Our Approach</p>
+        <p style={{ fontSize: '25px', lineHeight: '35px', fontWeight: 300, color: '#d4d4d4', marginBottom: '35px' }}>
+          We favor assets with strong fundamentals, recurring economics, and opportunities for continued growth. Some are built internally from first principles. Others are acquired and stewarded for the long term.
+        </p>
+        <p style={{ fontSize: '25px', lineHeight: '35px', fontWeight: 300, color: '#d4d4d4' }}>
+          Unlike traditional investment firms, we are not focused on frequent exits or short-term optimization. We believe ownership is most powerful when measured in years and decades, not quarters.
+        </p>
       </div>
 
       {/* Divider */}
