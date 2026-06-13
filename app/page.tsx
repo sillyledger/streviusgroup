@@ -47,7 +47,7 @@ export default function Home() {
   ]
 
   return (
-    <main style={{ minHeight: '100vh', backgroundColor: '#1c1c1e', fontFamily: 'Geist, Helvetica, Arial, sans-serif' }}>
+    <main style={{ minHeight: '100vh', backgroundColor: '#0D1821', fontFamily: 'Geist, Helvetica, Arial, sans-serif' }}>
       <Navbar />
 
       {/* Hero */}
