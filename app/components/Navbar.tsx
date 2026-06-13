@@ -6,15 +6,15 @@ export default function Navbar() {
       <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '14px', textDecoration: 'none' }}>
         <img src="/ryoka-mark.svg" alt="Ryoka" style={{ height: '60px' }} />
         <span style={{ fontSize: '22px', fontWeight: 900, letterSpacing: '-0.02em', color: '#f0f0f0', fontFamily: 'Geist, Helvetica, Arial, sans-serif' }}>
-          <span style={{ color: '#E8C840' }}>/</span>ryo-ka<span style={{ color: '#E8C840' }}>/</span>
+          Ryoka
         </span>
       </Link>
       <div style={{ display: 'flex', alignItems: 'center', gap: '40px' }}>
-        <Link href="/holdings" style={{ fontSize: '18px', color: '#666', textDecoration: 'none', letterSpacing: '0.06em' }}>Holdings</Link>
-        <Link href="/markets" style={{ fontSize: '18px', color: '#666', textDecoration: 'none', letterSpacing: '0.06em' }}>Markets</Link>
-        <Link href="/capital" style={{ fontSize: '18px', color: '#666', textDecoration: 'none', letterSpacing: '0.06em' }}>Capital</Link>
-        <Link href="/about" style={{ fontSize: '18px', color: '#666', textDecoration: 'none', letterSpacing: '0.06em' }}>About</Link>
-        <Link href="/contact" style={{ fontSize: '18px', color: '#666', textDecoration: 'none', letterSpacing: '0.06em' }}>Contact</Link>
+        <Link href="/holdings" style={{ fontSize: '20px', color: '#666', textDecoration: 'none', letterSpacing: '0.06em' }}>Holdings</Link>
+        <Link href="/markets" style={{ fontSize: '20px', color: '#666', textDecoration: 'none', letterSpacing: '0.06em' }}>Markets</Link>
+        <Link href="/capital" style={{ fontSize: '20px', color: '#666', textDecoration: 'none', letterSpacing: '0.06em' }}>Capital</Link>
+        <Link href="/about" style={{ fontSize: '20px', color: '#666', textDecoration: 'none', letterSpacing: '0.06em' }}>About</Link>
+        <Link href="/contact" style={{ fontSize: '20px', color: '#666', textDecoration: 'none', letterSpacing: '0.06em' }}>Contact</Link>
       </div>
     </nav>
   )
