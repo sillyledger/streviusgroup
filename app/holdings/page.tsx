@@ -9,7 +9,7 @@ export default function Holdings() {
 
       {/* Hero */}
       <div style={{ maxWidth: '980px', margin: '0 auto', padding: '140px 50px 0' }}>
-        <p style={{ fontSize: '13px', color: '#446', letterSpacing: '0.08em', marginBottom: '24px' }}>Holdings</p>
+        <p style={{ fontSize: '13px', color: '#555', letterSpacing: '0.08em', marginBottom: '24px' }}>Holdings</p>
         <h1 style={{ fontSize: '80px', fontWeight: 900, lineHeight: '1.0', letterSpacing: '-0.03em', color: '#f0f0f0', marginBottom: '32px' }}>
           Built to hold.
         </h1>
@@ -25,7 +25,7 @@ export default function Holdings() {
 
       {/* Bento Grid */}
       <div style={{ maxWidth: '980px', margin: '0 auto', padding: '80px 50px 0' }}>
-        <p style={{ fontSize: '13px', color: '#446', letterSpacing: '0.08em', marginBottom: '40px' }}>Current Holdings</p>
+        <p style={{ fontSize: '13px', color: '#555', letterSpacing: '0.08em', marginBottom: '40px' }}>Current Holdings</p>
 
         {/* Row 1: Sorano 2/3 + Aegos 1/3 */}
         <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '12px', marginBottom: '12px' }}>
@@ -41,7 +41,7 @@ export default function Holdings() {
               <span style={{ fontSize: '21px', fontWeight: 700, color: '#f0f0f0' }}>Sorano</span>
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H5M12 2V9" stroke="#555" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
             </div>
-            <p style={{ fontSize: '13px', color: '#446', marginBottom: '16px' }}>sorano.space</p>
+            <p style={{ fontSize: '13px', color: '#555', marginBottom: '16px' }}>sorano.space</p>
             <p style={{ fontSize: '17px', color: '#aaa', lineHeight: '1.6', fontWeight: 300, marginBottom: '24px' }}>
               Roadmap, changelog, and community votes for your product. Share what you are building, let users vote on what is next, publish a changelog when you ship.
             </p>
@@ -64,7 +64,7 @@ export default function Holdings() {
               <span style={{ fontSize: '19px', fontWeight: 700, color: '#f0f0f0' }}>Aegos Intel</span>
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H5M12 2V9" stroke="#555" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
             </div>
-            <p style={{ fontSize: '13px', color: '#446', marginBottom: '14px' }}>aegosintel.com</p>
+            <p style={{ fontSize: '13px', color: '#555', marginBottom: '14px' }}>aegosintel.com</p>
             <p style={{ fontSize: '15px', color: '#aaa', lineHeight: '1.55', fontWeight: 300, marginBottom: '20px' }}>Company intelligence and data platform. Structured business insights for operators and analysts.</p>
             <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
               {['SaaS', 'B2B', 'In Progress'].map(t => (
@@ -88,7 +88,7 @@ export default function Holdings() {
               <span style={{ fontSize: '19px', fontWeight: 700, color: '#f0f0f0' }}>TWO Docs</span>
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H5M12 2V9" stroke="#555" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
             </div>
-            <p style={{ fontSize: '13px', color: '#446', marginBottom: '14px' }}>two.so</p>
+            <p style={{ fontSize: '13px', color: '#555', marginBottom: '14px' }}>two.so</p>
             <p style={{ fontSize: '15px', color: '#aaa', lineHeight: '1.55', fontWeight: 300, marginBottom: '20px' }}>The doc app built for iPad and Mac. Beautiful, focused writing for creatives and solo operators.</p>
             <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
               {['SaaS', 'B2B & B2C', 'In Beta'].map(t => (
@@ -109,7 +109,7 @@ export default function Holdings() {
               <span style={{ fontSize: '19px', fontWeight: 700, color: '#f0f0f0' }}>Tenkaro</span>
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H5M12 2V9" stroke="#555" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
             </div>
-            <p style={{ fontSize: '13px', color: '#446', marginBottom: '14px' }}>tenkaro.com</p>
+            <p style={{ fontSize: '13px', color: '#555', marginBottom: '14px' }}>tenkaro.com</p>
             <p style={{ fontSize: '15px', color: '#aaa', lineHeight: '1.55', fontWeight: 300, marginBottom: '20px' }}>Domain monitoring tool. Track availability, expiry, and changes across the domains that matter.</p>
             <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
               {['SaaS', 'B2B', 'B2C', 'In Progress'].map(t => (
@@ -130,7 +130,7 @@ export default function Holdings() {
               <span style={{ fontSize: '19px', fontWeight: 700, color: '#f0f0f0' }}>One Peak Two</span>
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H5M12 2V9" stroke="#555" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
             </div>
-            <p style={{ fontSize: '13px', color: '#446', marginBottom: '14px' }}>onepeaktwo.com</p>
+            <p style={{ fontSize: '13px', color: '#555', marginBottom: '14px' }}>onepeaktwo.com</p>
             <p style={{ fontSize: '15px', color: '#aaa', lineHeight: '1.55', fontWeight: 300, marginBottom: '20px' }}>Studio and experiments arm. Building internet projects as an experiment - hit and miss principle.</p>
             <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
               {['Studio'].map(t => (
@@ -155,7 +155,7 @@ export default function Holdings() {
                 <span style={{ fontSize: '21px', fontWeight: 700, color: '#f0f0f0' }}>Story Brew</span>
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H5M12 2V9" stroke="#555" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
               </div>
-              <p style={{ fontSize: '13px', color: '#446', marginBottom: '14px' }}>storybrew.online</p>
+              <p style={{ fontSize: '13px', color: '#555', marginBottom: '14px' }}>storybrew.online</p>
               <p style={{ fontSize: '17px', color: '#aaa', lineHeight: '1.6', fontWeight: 300 }}>Bedtime stories for English learners (B1-B2), with a real narrator. A platform for language learning through immersive storytelling.</p>
             </div>
             <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', justifyContent: 'flex-end', alignSelf: 'flex-end' }}>
@@ -174,7 +174,7 @@ export default function Holdings() {
 
       {/* Our Approach */}
       <div style={{ maxWidth: '980px', margin: '0 auto', padding: '80px 50px 80px' }}>
-        <p style={{ fontSize: '13px', color: '#446', letterSpacing: '0.08em', marginBottom: '24px' }}>Our Approach</p>
+        <p style={{ fontSize: '13px', color: '#555', letterSpacing: '0.08em', marginBottom: '24px' }}>Our Approach</p>
         <p style={{ fontSize: '25px', lineHeight: '35px', fontWeight: 300, color: '#d4d4d4', marginBottom: '35px' }}>
           We favor assets with strong fundamentals, recurring economics, and opportunities for continued growth. Some are built internally from first principles. Others are acquired and stewarded for the long term.
         </p>
