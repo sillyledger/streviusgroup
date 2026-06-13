@@ -18,11 +18,6 @@ export default function Holdings() {
         </p>
       </div>
 
-      {/* Divider */}
-      <div style={{ maxWidth: '980px', margin: '0 auto', padding: '80px 50px 0' }}>
-        <div style={{ borderTop: '0.5px solid #1a2a3a' }} />
-      </div>
-
       {/* Bento Grid */}
       <div style={{ maxWidth: '980px', margin: '0 auto', padding: '80px 50px 0' }}>
         <p style={{ fontSize: '13px', color: '#555', letterSpacing: '0.08em', marginBottom: '40px' }}>Current Holdings</p>
@@ -181,11 +176,6 @@ export default function Holdings() {
         <p style={{ fontSize: '25px', lineHeight: '35px', fontWeight: 300, color: '#d4d4d4' }}>
           Unlike traditional investment firms, we are not focused on frequent exits or short-term optimization. We believe ownership is most powerful when measured in years and decades, not quarters.
         </p>
-      </div>
-
-      {/* Divider */}
-      <div style={{ maxWidth: '980px', margin: '0 auto', padding: '0 50px' }}>
-        <div style={{ borderTop: '0.5px solid #1a2a3a' }} />
       </div>
 
       {/* Footer strip */}
