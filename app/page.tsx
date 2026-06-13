@@ -5,6 +5,16 @@ import Navbar from './components/Navbar'
 export default function Home() {
   const holdings = [
     {
+      name: 'TWO Docs',
+      domain: 'two.so',
+      description: 'The doc app built for iPad and Mac. Beautiful, focused writing for creatives, solo operators, and small teams.',
+      tags: ['SaaS', 'B2B & B2C', 'In Beta'],
+      initial: '2',
+      iconBg: '#1c1c2e',
+      iconColor: '#8888ff',
+      href: 'https://www.two.so',
+    },
+    {
       name: 'Aegos Intel',
       domain: 'aegosintel.com',
       description: 'Company intelligence and data platform. Structured business insights for operators and analysts.',
@@ -15,34 +25,24 @@ export default function Home() {
       href: 'https://aegosintel.com',
     },
     {
-      name: 'Two',
-      domain: 'two.so',
-      description: 'The doc app built for iPad and Mac. Beautiful, focused writing for creatives, solo operators, and small teams.',
-      tags: ['SaaS', 'B2B & B2C', 'In Beta'],
-      initial: '2',
-      iconBg: '#1c1c2e',
-      iconColor: '#8888ff',
-      href: 'https://www.two.so',
-    },
-    {
-      name: 'One Peak Two',
-      domain: 'onepeaktwo.com',
-      description: 'Studio and experiments arm. Building internet projects as an experiment - hit and miss principle.',
-      tags: ['Studio'],
-      initial: 'O',
-      iconBg: '#2a2a2c',
-      iconColor: '#aaa',
-      href: 'https://onepeaktwo.com',
-    },
-    {
-      name: 'Story Brew',
-      domain: 'storybrew.online',
-      description: 'Bedtime stories for English learners (B1-B2), with a real narrator. A platform for language learning through immersive storytelling.',
-      tags: ['Education', 'English Learning'],
+      name: 'Sorano',
+      domain: 'sorano.space',
+      description: 'Live.',
+      tags: ['Live'],
       initial: 'S',
-      iconBg: '#1a3a5c',
+      iconBg: '#0a1f35',
       iconColor: '#7aaee8',
-      href: 'https://storybrew.online',
+      href: 'https://sorano.space',
+    },
+    {
+      name: 'Tenkaro',
+      domain: 'tenkaro.com',
+      description: 'In progress.',
+      tags: ['In Progress'],
+      initial: 'T',
+      iconBg: '#1a1a1a',
+      iconColor: '#aaa',
+      href: 'https://tenkaro.com',
     },
   ]
 
@@ -66,20 +66,9 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Our Approach */}
-      <div style={{ maxWidth: '980px', margin: '0 auto', padding: '120px 50px 120px' }}>
-        <p style={{ fontSize: '13px', color: '#555', letterSpacing: '0.08em', marginBottom: '24px' }}>Our Approach</p>
-        <p style={{ fontSize: '25px', lineHeight: '35px', fontWeight: 300, color: '#d4d4d4', marginBottom: '35px' }}>
-          Most firms optimize for exits. We optimize for ownership. The longer we hold, the more we learn, and the better our next move becomes. We currently operate across a small number of owned properties. Software tools, content assets, and early-stage bets. Each is chosen for its potential to grow quietly and hold value over time.
-        </p>
-        <p style={{ fontSize: '25px', lineHeight: '35px', fontWeight: 300, color: '#d4d4d4' }}>
-          We look for undervalued digital properties, niche media brands, and small real-world businesses with durable fundamentals. We are not chasing growth. We are building a base of assets that quietly and consistently generate value.
-        </p>
-      </div>
-
       {/* Divider */}
-      <div style={{ maxWidth: '980px', margin: '0 auto', padding: '0 50px' }}>
-        <div style={{ borderTop: '0.5px solid #2a2a2c' }} />
+      <div style={{ maxWidth: '980px', margin: '0 auto', padding: '120px 50px 0' }}>
+        <div style={{ borderTop: '0.5px solid #1a2a3a' }} />
       </div>
 
       {/* Portfolio */}
@@ -94,16 +83,16 @@ export default function Home() {
               rel="noopener noreferrer"
               style={{
                 display: 'block',
-                background: '#242426',
+                background: '#112233',
                 borderRadius: '10px',
                 padding: '28px',
-                border: '0.5px solid #2e2e30',
+                border: '0.5px solid #1a3050',
                 textDecoration: 'none',
                 cursor: 'pointer',
                 transition: 'border-color 0.15s ease',
               }}
-              onMouseEnter={e => (e.currentTarget.style.borderColor = '#444')}
-              onMouseLeave={e => (e.currentTarget.style.borderColor = '#2e2e30')}
+              onMouseEnter={e => (e.currentTarget.style.borderColor = '#2a4a6a')}
+              onMouseLeave={e => (e.currentTarget.style.borderColor = '#1a3050')}
             >
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '10px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
@@ -131,7 +120,7 @@ export default function Home() {
                   {h.initial}
                 </div>
               </div>
-              <p style={{ fontSize: '13px', color: '#555', marginBottom: '14px' }}>{h.domain}</p>
+              <p style={{ fontSize: '13px', color: '#446', marginBottom: '14px' }}>{h.domain}</p>
               <p style={{ fontSize: '16px', color: '#aaa', lineHeight: '1.55', fontWeight: 300 }}>{h.description}</p>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginTop: '20px' }}>
                 {h.tags.map((tag) => (
@@ -139,8 +128,8 @@ export default function Home() {
                     key={tag}
                     style={{
                       fontSize: '11px',
-                      color: '#555',
-                      border: '0.5px solid #333',
+                      color: '#556',
+                      border: '0.5px solid #1a3050',
                       borderRadius: '4px',
                       padding: '3px 9px',
                       letterSpacing: '0.05em',
@@ -162,7 +151,23 @@ export default function Home() {
 
       {/* Divider */}
       <div style={{ maxWidth: '980px', margin: '0 auto', padding: '0 50px' }}>
-        <div style={{ borderTop: '0.5px solid #2a2a2c' }} />
+        <div style={{ borderTop: '0.5px solid #1a2a3a' }} />
+      </div>
+
+      {/* Our Approach */}
+      <div style={{ maxWidth: '980px', margin: '0 auto', padding: '120px 50px 120px' }}>
+        <p style={{ fontSize: '13px', color: '#555', letterSpacing: '0.08em', marginBottom: '24px' }}>Our Approach</p>
+        <p style={{ fontSize: '25px', lineHeight: '35px', fontWeight: 300, color: '#d4d4d4', marginBottom: '35px' }}>
+          Most firms optimize for exits. We optimize for ownership. The longer we hold, the more we learn, and the better our next move becomes. We currently operate across a small number of owned properties. Software tools, content assets, and early-stage bets. Each is chosen for its potential to grow quietly and hold value over time.
+        </p>
+        <p style={{ fontSize: '25px', lineHeight: '35px', fontWeight: 300, color: '#d4d4d4' }}>
+          We look for undervalued digital properties, niche media brands, and small real-world businesses with durable fundamentals. We are not chasing growth. We are building a base of assets that quietly and consistently generate value.
+        </p>
+      </div>
+
+      {/* Divider */}
+      <div style={{ maxWidth: '980px', margin: '0 auto', padding: '0 50px' }}>
+        <div style={{ borderTop: '0.5px solid #1a2a3a' }} />
       </div>
 
       {/* Reach Out */}
@@ -177,13 +182,12 @@ export default function Home() {
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
 
-          {/* Primary email - full width */}
           <div style={{
             gridColumn: 'span 2',
-            background: '#242426',
+            background: '#112233',
             borderRadius: '10px',
             padding: '28px',
-            border: '0.5px solid #2e2e30',
+            border: '0.5px solid #1a3050',
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'center',
@@ -202,8 +206,7 @@ export default function Home() {
             </a>
           </div>
 
-          {/* Acquisitions */}
-          <div style={{ background: '#242426', borderRadius: '10px', padding: '28px', border: '0.5px solid #2e2e30' }}>
+          <div style={{ background: '#112233', borderRadius: '10px', padding: '28px', border: '0.5px solid #1a3050' }}>
             <p style={{ fontSize: '11px', color: '#555', letterSpacing: '0.08em', marginBottom: '12px' }}>Acquisitions</p>
             <p style={{ fontSize: '17px', color: '#d4d4d4', fontWeight: 300 }}>Selling a business or project?</p>
             <div style={{ marginTop: '20px' }}>
@@ -219,8 +222,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Partnerships */}
-          <div style={{ background: '#242426', borderRadius: '10px', padding: '28px', border: '0.5px solid #2e2e30' }}>
+          <div style={{ background: '#112233', borderRadius: '10px', padding: '28px', border: '0.5px solid #1a3050' }}>
             <p style={{ fontSize: '11px', color: '#555', letterSpacing: '0.08em', marginBottom: '12px' }}>Partnerships</p>
             <p style={{ fontSize: '17px', color: '#d4d4d4', fontWeight: 300 }}>Building something aligned?</p>
             <div style={{ marginTop: '20px' }}>
