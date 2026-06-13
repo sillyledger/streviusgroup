@@ -87,7 +87,7 @@ export default function Home() {
         <p style={{ fontSize: '13px', color: '#555', letterSpacing: '0.08em', marginBottom: '40px' }}>Portfolio &amp; Holdings</p>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '12px' }}>
           {holdings.map((h) => (
-            
+            <a
               key={h.name}
               href={h.href}
               target="_blank"
@@ -207,7 +207,7 @@ export default function Home() {
             <p style={{ fontSize: '11px', color: '#555', letterSpacing: '0.08em', marginBottom: '12px' }}>Acquisitions</p>
             <p style={{ fontSize: '17px', color: '#d4d4d4', fontWeight: 300 }}>Selling a business or project?</p>
             <div style={{ marginTop: '20px' }}>
-              
+              <a
                 href="mailto:acquire@ryoka.xyz?subject=Acquisition Inquiry"
                 style={{ fontSize: '13px', color: '#666', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
               >
@@ -224,7 +224,7 @@ export default function Home() {
             <p style={{ fontSize: '11px', color: '#555', letterSpacing: '0.08em', marginBottom: '12px' }}>Partnerships</p>
             <p style={{ fontSize: '17px', color: '#d4d4d4', fontWeight: 300 }}>Building something aligned?</p>
             <div style={{ marginTop: '20px' }}>
-              
+              <a
                 href="mailto:partner@ryoka.xyz?subject=Partnership"
                 style={{ fontSize: '13px', color: '#666', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
               >
