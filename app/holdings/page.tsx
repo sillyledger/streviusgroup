@@ -13,9 +13,14 @@ export default function Holdings() {
         <h1 style={{ fontSize: '80px', fontWeight: 900, lineHeight: '1.0', letterSpacing: '-0.03em', color: '#f0f0f0', marginBottom: '32px' }}>
           Built to hold.
         </h1>
-        <p style={{ fontSize: '25px', lineHeight: '38px', fontWeight: 300, color: '#d4d4d4', maxWidth: '620px' }}>
+        <p style={{ fontSize: '25px', lineHeight: '38px', fontWeight: 300, color: '#d4d4d4', maxWidth: '980px' }}>
           Businesses, software, and digital assets we have built, acquired, or accumulated. Each chosen for its potential to create durable value through long-term ownership.
         </p>
+      </div>
+
+      {/* Divider */}
+      <div style={{ maxWidth: '980px', margin: '0 auto', padding: '80px 50px 0' }}>
+        <div style={{ borderTop: '0.5px solid #1a2a3a' }} />
       </div>
 
       {/* Bento Grid */}
@@ -162,6 +167,11 @@ export default function Holdings() {
         </a>
       </div>
 
+      {/* Divider */}
+      <div style={{ maxWidth: '980px', margin: '0 auto', padding: '80px 50px 0' }}>
+        <div style={{ borderTop: '0.5px solid #1a2a3a' }} />
+      </div>
+
       {/* Our Approach */}
       <div style={{ maxWidth: '980px', margin: '0 auto', padding: '80px 50px 80px' }}>
         <p style={{ fontSize: '13px', color: '#555', letterSpacing: '0.08em', marginBottom: '24px' }}>Our Approach</p>
@@ -171,6 +181,11 @@ export default function Holdings() {
         <p style={{ fontSize: '25px', lineHeight: '35px', fontWeight: 300, color: '#d4d4d4' }}>
           Unlike traditional investment firms, we are not focused on frequent exits or short-term optimization. We believe ownership is most powerful when measured in years and decades, not quarters.
         </p>
+      </div>
+
+      {/* Divider */}
+      <div style={{ maxWidth: '980px', margin: '0 auto', padding: '0 50px' }}>
+        <div style={{ borderTop: '0.5px solid #1a2a3a' }} />
       </div>
 
       {/* Footer strip */}
