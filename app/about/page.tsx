@@ -26,7 +26,7 @@ export default function About() {
         </p>
         <p style={{ fontSize: '13px', color: '#555', letterSpacing: '0.08em', marginBottom: '24px' }}>On experiments</p>
         <p style={{ fontSize: '25px', lineHeight: '38px', fontWeight: 300, color: '#d4d4d4', maxWidth: '980px' }}>
-          Not every idea is serious. Some are stupid on purpose. We believe experiments — the weird ones, the niche ones, the ones that probably will not work — are how you find the things that do. We run them anyway, cheaply and fast, and keep what compounds.
+          Not every idea is serious. Some are stupid on purpose. We believe the weird ones, the niche ones, the ones that probably will not work, are how you find the things that do. We run them anyway, cheaply and fast, and keep what compounds.
         </p>
       </div>
 
@@ -38,7 +38,7 @@ export default function About() {
       {/* CTA */}
       <div style={{ maxWidth: '980px', margin: '0 auto', padding: '40px 50px 120px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <p style={{ fontSize: '18px', fontWeight: 300, color: '#555', maxWidth: '480px', lineHeight: '1.5' }}>
-          Founder-led. Independently held. Operating quietly for the long term.
+          Interested in a chat?
         </p>
         <a href="mailto:p@ryoka.xyz" style={{ fontSize: '18px', color: '#666', textDecoration: 'none', borderBottom: '1px solid #444', paddingBottom: '2px', letterSpacing: '0.06em', whiteSpace: 'nowrap', flexShrink: 0 }}>
           Get in touch
