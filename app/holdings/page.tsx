@@ -162,11 +162,6 @@ export default function Holdings() {
         </a>
       </div>
 
-      {/* Divider */}
-      <div style={{ maxWidth: '980px', margin: '0 auto', padding: '80px 50px 0' }}>
-        <div style={{ borderTop: '0.5px solid #1a2a3a' }} />
-      </div>
-
       {/* Our Approach */}
       <div style={{ maxWidth: '980px', margin: '0 auto', padding: '80px 50px 80px' }}>
         <p style={{ fontSize: '13px', color: '#555', letterSpacing: '0.08em', marginBottom: '24px' }}>Our Approach</p>
